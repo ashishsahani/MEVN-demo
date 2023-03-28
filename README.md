@@ -15,7 +15,8 @@ https://hub.docker.com/_/mongo
 
 ## Steps to run the app
 1. locate to the project directory
-2. run ```npm install```
-3. run ``` npm start ```
-4. open web browser 
-5. type ```http:\\localhost:8080```
+2. rename .env-example to .env
+3. run ```npm install```
+4. run ``` npm start ```
+5. open web browser 
+6. type ```http:\\localhost:8080```
