@@ -1,0 +1,16 @@
+services:
+  nodebackend:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"   
+    depends_on:
+      - db
+  db:
+    volumes:
+      - app_db:/data/db
+    image: mongo:4.4.19
+    ports:
+      - "27017:27017" 
+volumes:
+   app_db:
